@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Particle System - Hand Control</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "@mediapipe/tasks-vision": "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14/vision_bundle.mjs"
+    }
+  }
+  </script>
+</head>
+<body>
+  <video id="cam" playsinline muted></video>
+
+  <div id="status">Iniciando…</div>
+  <div id="help">
+    <b>Dos manos</b>: sepáralas para agrandar, júntalas para encoger<br>
+    <b>Una mano</b>: mueve la esfera, pellizca para el zoom<br>
+    <b>Mano abierta / puño</b>: dispersa o recoge las partículas<br>
+    <b>H</b> esqueletos · <b>V</b> cámara · <b>C</b> color · <b>F</b> pantalla completa<br>
+    Sin cámara: arrastra con el mouse y usa la rueda
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
